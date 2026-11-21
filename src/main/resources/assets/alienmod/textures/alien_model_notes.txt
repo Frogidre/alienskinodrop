@@ -1,0 +1,19 @@
+# Alien Mod - Minecraft 1.21.11 Fabric
+
+# Model: alien
+# Based on DrDonut's alien skin concept images
+# Colors: grey-green skin, black eyes, mouth interior
+
+# Note: This is a placeholder texture definition.
+# A real 64x64 PNG texture should be placed at:
+# src/main/resources/assets/alienmod/textures/entity/alien.png
+
+# Texture layout (64x64):
+# - Head (bulbous): top-left quadrant
+# - Eyes: large black ovals
+# - Body: ribbed thin torso
+# - Arms: long thin arms
+# - Hands: clawed fingers
+# - Legs: thin legs with clawed feet
+
+alien_mod_base=#6B7B7A

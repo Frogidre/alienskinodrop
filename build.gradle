@@ -1,0 +1,42 @@
+plugins {
+    id 'fabric-loom' version '1.14-SNAPSHOT'
+}
+
+group = "com.example"
+version = "1.0.0"
+archivesBaseName = "alienmod"
+
+repositories {
+    mavenCentral()
+    maven { url = "https://maven.fabricmc.net/" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.11"
+    mappings "net.fabricmc:yarn:1.21.11+build.5::ap mappings"
+    modImplementation "net.fabricmc:fabric-loader:0.19.2"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.141.3+1.21.11"
+    modImplementation "com.maxhenkel:simplevoicechat:1.2.0"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+sourceSets.main.resources { srcDirs("src/main/resources") }
+
+loom {
+    runs {
+        client {
+            workingDirectory = "run"
+            side = "CLIENT"
+            gameVersion = "1.21.11"
+            yarnMappings = "1.21.11+build.5"
+        }
+    }
+}

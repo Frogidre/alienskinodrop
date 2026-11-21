@@ -1,0 +1,23 @@
+version = 1
+mod_id = "alienmod"
+mod_name = "Alien Mod"
+mod_version = "1.0.0"
+minecraft_version = "1.21.11"
+loader_version = "0.19.2"
+fabric_api_version = "0.141.3+1.21.11"
+
+description = "Replaces player model with alien form (based on DrDonut's alien concept images) and integrates Simple Voice Chat mouth animation."
+
+features = [
+    "Custom alien player model with big bulbous head, black eyes, thin ribbed body, long arms with claws",
+    "All players appear as aliens in multiplayer",
+    "Mouth opens/closes when speaking through Simple Voice Chat",
+    "Client-side only mod (no server changes required)",
+    "Works without Simple Voice Chat installed (graceful fallback)"
+]
+
+dependencies = [
+    "fabric-loader >=0.19.2",
+    "fabric-api *",
+    "simplevoicechat *"
+]

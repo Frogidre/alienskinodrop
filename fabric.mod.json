@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "alienmod",
+  "version": "1.0.0",
+  "name": "Alien Mod",
+  "description": "Replaces player model with alien form and integrates voice chat mouth animation",
+  "authors": [
+    "Vlad"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Vlad/alienmod",
+    "sources": [
+      "https://github.com/Vlad/alienmod"
+    ]
+  },
+  "license": "MIT",
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "fabric-api": "*",
+    "simplevoicechat": "*"
+  }
+}
